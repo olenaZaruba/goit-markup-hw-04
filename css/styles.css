@@ -15,6 +15,7 @@
   --accent-color-second: #f4f4fd;
   --accent-color-border-8: rgba(46, 47, 66, 0.08);
   --accent-color-border-16: rgba(46, 47, 66, 0.16);
+  --accent-color-border-70: rgba(46, 47, 66, 0.7);
 }
 /* reset styles */
 h1,
@@ -69,6 +70,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  margin-bottom: 8px;
 }
 
 .container {
@@ -203,6 +205,17 @@ body {
 .hero {
   background-color: var(--primary-text-color);
   padding: 188px 0px;
+  background-image: linear-gradient(
+      var(--accent-color-border-70),
+      var(--accent-color-border-70)
+    ),
+    url(../images/hero/hero.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-title {
@@ -306,7 +319,15 @@ body {
 
 .work {
   padding-bottom: 120px;
+  /* align-items: center; */
+  /* justify-content: center; */
 }
+.socials {
+  display: flex;
+  gap: 24px;
+}
+
+/* background-color: #404bbf; */
 
 /* footer */
 .footer-discription {
