@@ -188,9 +188,14 @@ body {
 
 .work-item-link {
   color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  display: block;
+}
+
+.work-item-link:hover,
+.work-item-link:focus {
+  box-shadow: 0px 1px 6px var(--accent-color-border-8),
+    0px 1px 1px var(--accent-color-border-16),
+    0px 2px 1px var(--accent-color-border-8);
 }
 
 .contact-link {
@@ -238,13 +243,12 @@ body {
 .button {
   min-width: 169px;
   min-height: 56px;
-  border-radius: 4px;
+
   padding: 16px 32px;
   font-family: var(--primary-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  align-items: center;
   letter-spacing: 0.04em;
   color: var(--contrast-text-color);
   background: var(--accent-color);
@@ -253,6 +257,9 @@ body {
   display: block;
   margin-right: auto;
   margin-left: auto;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .hero-container {
@@ -305,14 +312,6 @@ body {
   border-top: none;
   padding: 32px 16px;
   box-shadow: 0px 1px 6px var(--accent-color-border-8);
-}
-
-.work-item:hover,
-.work-item:focus {
-  border: 1px solid var(--accent-color-second);
-  box-shadow: 0px 1px 6px var(--accent-color-border-8),
-    0px 1px 1px var(--accent-color-border-16),
-    0px 2px 1px var(--accent-color-border-8);
 }
 
 .team-members-wrapper {
@@ -400,14 +399,14 @@ body {
   justify-content: center;
   align-items: center;
   color: var(--icons-color);
-  box-sizing: border-box;
-  border: 2px solid var(--icons-color);
+
+  border: 1px solid var(--icons-color);
   border-radius: 4px;
 }
 .customers-link:hover,
 .customers-link:focus {
   color: var(--style-color);
-  border: 1px solid var(--style-color);
+  border-color: var(--style-color);
 }
 
 .customers-svg {
@@ -442,13 +441,14 @@ body {
   color: var(--contrast-text-color);
   margin-bottom: 16px;
   font-weight: 500;
+
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 .social-media {
-  display: flex;
-  flex-wrap: wrap;
-  height: 80px;
   margin-left: 120px;
-  padding-right: 707px;
 }
 .footer-social-link {
   display: flex;
@@ -461,7 +461,7 @@ body {
   border-radius: 50%;
 }
 .footer-social-link:hover,
-.footer-social-linbk:focus {
+.footer-social-link:focus {
   background-color: var(--icons-color2);
 }
 .footer-social {
